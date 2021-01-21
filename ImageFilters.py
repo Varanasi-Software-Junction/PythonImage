@@ -1,4 +1,5 @@
 def makeBW(pic):
+#Convert Image to Grayscale
     mx, my, mz = pic.shape
 
     for x in range(mx):
@@ -14,6 +15,7 @@ def makeBW(pic):
 
     return pic
 def fullBW(pic):
+# Convert Image to pure black and white
     pic=makeBW(pic)
     mx, my, mz = pic.shape
     for x in range(mx):
